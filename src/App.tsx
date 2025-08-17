@@ -1,5 +1,5 @@
-import { ColorModeButton } from "@/components/ui/color-mode";
 import { CodeViewer } from "./components/CodeViewer";
+import { Converter } from "./components/converter/Converter";
 
 const tscode = `
 export type ClassValue = ClassArray | ClassDictionary | string | number | bigint | null | boolean | undefined;
@@ -40,7 +40,7 @@ function App() {
         />
       </div>
       <div className="p-4">
-        <ColorModeButton />
+        <Converter code={tscode} />
       </div>
       <div className="p-4">
         <CodeViewer
