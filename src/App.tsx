@@ -40,7 +40,7 @@ function App() {
         />
       </div>
       <div className="p-4">
-        <Converter code={tscode} />
+        <Converter tscode={tscode} />
       </div>
       <div className="p-4">
         <CodeViewer

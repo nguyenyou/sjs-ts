@@ -1,8 +1,8 @@
 type Props = {
-  code: string;
+  tscode: string;
 };
-export const Converter = ({ code }: Props) => {
+export const Converter = ({ tscode }: Props) => {
   return <div>
-    {code}
+    {tscode}
   </div>;
 };
