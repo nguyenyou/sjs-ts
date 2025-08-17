@@ -1,1 +1,11 @@
-@import "tailwindcss";
+@layer theme, base, components, reset, tokens, recipes, utilities;
+
+@import "tailwindcss/theme.css" layer(theme);
+/* @import "tailwindcss/preflight.css" layer(base); */
+@import "tailwindcss/utilities.css" layer(utilities);
+
+
+html, body, #root {
+  width: 100vw;
+  height: 100vh;
+}
