@@ -24,7 +24,10 @@ type Props = {
 export const CodeViewer = ({ file }: Props) => {
   return (
     <CodeBlock.AdapterProvider value={shikiAdapter}>
-      <CodeBlock.Root code={file.code} language={file.language}>
+      <CodeBlock.Root code={file.code} language={file.language} meta={{ wordWrap: true }}>
+        <CodeBlock.Header>
+          <CodeBlock.Title>{file.title}</CodeBlock.Title>
+        </CodeBlock.Header>
         <CodeBlock.Content>
           <CodeBlock.Code>
             <CodeBlock.CodeText />
